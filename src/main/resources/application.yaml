@@ -13,7 +13,6 @@ spring:
           username: fabio-nobre
 
 
-
 eureka:
   client:
     serviceUrl:
