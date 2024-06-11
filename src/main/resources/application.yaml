@@ -13,6 +13,7 @@ spring:
           username: fabio-nobre
           password: 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
 
+
 eureka:
   client:
     serviceUrl:
