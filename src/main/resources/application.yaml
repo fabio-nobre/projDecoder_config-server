@@ -8,10 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/MichelliBrito/ead-config-server-repo
+          uri: https://github.com/fabio-nobre/proj-config-server-repo
           default-label: main
-          username: michelli
-          password: ******************
+          username: fabio-nobre
+          password: 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
 
 eureka:
   client:
