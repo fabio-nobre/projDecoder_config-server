@@ -11,7 +11,7 @@ spring:
           uri: https://github.com/fabio-nobre/proj-config-server-repo
           default-label: main
           username: fabio-nobre
-          password: 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
+          password: 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
 
 ead:
   configServer:
