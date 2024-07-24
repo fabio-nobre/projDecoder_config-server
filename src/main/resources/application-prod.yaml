@@ -1,0 +1,29 @@
+--configuracao para utilizar no Heroku
+server:
+  port: ${PORT}
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fabio-nobre/proj-config-server-repo
+          default-label: main
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+
+encrypt:
+  key: MEgCQQCrFAu7oxWT2/AW1CE+onQMSTa4msuLLEGPR2Kh0kyKSdzPvJ+pizBByYMKrLCYUQq2cOQLPktw58JezuYPiErVAgMBAAE=
+
+ead:
+  configServer:
+    username: ${CONFIG_SERVER_USERNAME}
+    password: ${CONFIG_SERVER_PASSWORD}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}
+  instance:
+    hostname: ${APP_DOMAIN_NAME}
+    non-secure-port: 80
